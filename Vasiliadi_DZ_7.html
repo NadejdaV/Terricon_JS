@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DZ_7_Nadejda</title>
+</head>
+<body>
+    <form action="">
+        <input type="text" id="phone" placeholder="+7784">
+    </form>
+    <button onclick="checkNumber()">Submit</button>
+</body>
+    <script>
+  function checkNumber(){
+       let number = document.getElementById('phone');
+       let pattern = /^[7][7]\d{1,9}$/
+        //alert(number.value);
+        if (pattern.test(number)){
+            alert('Номер введен верно!')}
+        else{
+            alert('Номер введен не верно!')
+        }
+    }
+    </script>
+
+</html>
