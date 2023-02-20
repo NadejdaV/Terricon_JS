@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DZ_5_Nadejda</title>
+</head>
+<body>
+    <script>
+    let array = [];
+    let array2 = [];
+    for (let i = 0; i < 20; i++) {
+        let randomNumber = Math.floor(Math.random() * (20 - 1 + 1)) + 1
+        array.push(randomNumber);
+        document.write(randomNumber +  ', ')
+        if (randomNumber % 2 == 0){
+        even = randomNumber
+        array2.push(even + ' ');
+        }
+    }
+
+     document.write('<br>')
+     document.write('<br>')
+    document.write(array2 )
+
+
+
+
+    </script>
+</body>
+</html>
